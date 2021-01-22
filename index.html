@@ -16,7 +16,7 @@
                     <h1 style="color: black;"> <span>H</span>ello</h1>
                 <h2> <span>T</span>his is </h2>
                 <h3> <span>A</span>lexis</h3>
-                <a href="#last-sec">This link takes you to last sectin</a>
+                <a href="#last-sec">This link takes you to last section</a>
             </div>
             <div class="intro">
                 <p>Hi, my name is Alexis Chen. I am an <em>sophomore</em> in UCSD, studying <strong>Computer Science</strong> and <strong>Math</strong>. 
@@ -45,7 +45,7 @@
                         <td>Food</td>
                         <td>
                             <ul>
-                                <li>Fried rice</li>
+                                <li class="first-food">Fried rice</li>
                                 <li>Chicken salad</li>
                                 <li>Chicken nachos</li>
                             </ul>
@@ -55,15 +55,31 @@
                         <td>Sports</td>
                         <td>
                             <ul>
-                                <li>Volleyball</li>
+                                <li class="first-sport">Volleyball</li>
                                 <li>Ping pang</li>
                                 <li>Swimming</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Singer</td>
+                        <td>
+                            <ul>
+                                <li class="first-singer">Taylor Swift</li>
+                                <li>Ariana Grande</li>
+                                <li>Charlie Puth</li>
                             </ul>
                         </td>
                     </tr>
                 </tbody>
             </table>
             
+        </div>
+    </section>
+    <section id="extra">
+        <div class="extra fun">
+            <h1>Extra</h1>
+            <p>This section is an extra section for random things and fun things </p>
         </div>
     </section>
     <section id="last">
@@ -73,7 +89,7 @@
                 <summary> Fun fact about me </summary>
                 Fun Fact: There isn't one.
             </details>
-            <label for="feedback">Things you wanna knwo about me(List more than 3): <br></label>
+            <label for="feedback">Things you wanna know about me(List more than 3): <br></label>
             <input type="text" name="feedback" id="feedback" required="" 
             size="30" pattern="[0-9][A-Z]{3}" minlength="3" 
             maxlength="100" placeholder="three things you wanna know about me" 
