@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 *{
     text-align: center;
     padding: 0;
     margin: 0;
+}
+p, label{
+    font-family: 'Hachi Maru Pop', cursive;
 }
 h1{
     color:rgb(0, 0, 255);
@@ -13,7 +17,10 @@ section > div > div > p{
     text-align: center;
     display: block;
     max-width: 800px;
-    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
     /* align-items: center; */
 }
 p + div{
@@ -28,8 +35,8 @@ table li{
 }
 
 .container{
-    /* min-height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    /*width: 100%;
     display: flex;
     align-items: center;
     justify-content: center; */
@@ -48,7 +55,7 @@ table li{
 #main .greeting{
     background-color: tomato;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     transition: .5s ease background-color;
 }
 /* #main .greeting:hover{
@@ -56,13 +63,13 @@ table li{
 } */
 #main .greeting a{
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     padding: 10px 20px;
     margin: 10px 0;
     border-radius: 10px;
     border: 2px solid white ;
     display: inline-block;
-    width: 100px;
+    width: 100mm;
 }
 #main .greeting a:visited{
     background-color: violet;
@@ -70,8 +77,36 @@ table li{
 #main .greeting a:hover{
     background-color: teal;
 }
+#main .greeting h1{
+    font-size: 2.3rem;
+}
+#main .greeting h2{
+    font-size: 2.3rem;
+}
+#main .greeting h3{
+    font-size: 2.3em;
+}
+#main .intro-img{
+    height: 450px;
+    width: 3.56in;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: inset;
+    border-width: 7px;
+    border-color:tomato;
+    position: relative;
+}
+#main .intro-img img{
+    height: 100%;
+    width: 100%;
+    padding-top: 0cm;
+    padding-bottom: 0cm;
+    padding-left: 0cm;
+    padding-right: 0cm;
+    margin: 0mm 0mm 0mm 0mm;
+}
 [class^="first"]{
-    background-color: yellow;
+    background-color: hsl(60, 100, 50);
 }
 #section .section table li{
     align-items: center;
