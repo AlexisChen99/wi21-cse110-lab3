@@ -13,6 +13,9 @@ h1{
 h2, h3{
     font-weight: 300;
 }
+span{
+    color: teal;
+}
 section > div > div > p{
     text-align: center;
     display: block;
@@ -34,29 +37,43 @@ table li{
     font-weight: normal;
 }
 
+
 .container{
     min-height: 100vh;
     /*width: 100%;
     display: flex;
     align-items: center;
     justify-content: center; */
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    gap: 15px 10px;
+    justify-content: start;
+}
+.sticky{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    margin-bottom: auto;
+    border: 5px solid tomato;
+    background-color: rgba(255, 99, 71, 0.74);
 }
 #main{
-    margin-top: 10px;
+    margin: 0 0;
 }
 #main .main{
-    margin: 0 auto;
-    padding: 0 50px;
+    top: 0cm;
+    margin: 10px auto;
+    /* padding: 0 50px; */
     max-width: 900px;
     text-align: center;
     display: inline;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 #main .greeting{
-    background-color: tomato;
     position: relative;
     margin-bottom: 60px;
     transition: .5s ease background-color;
+    margin-top: 0;
 }
 /* #main .greeting:hover{
     background-color: teal;
@@ -70,12 +87,17 @@ table li{
     border: 2px solid white ;
     display: inline-block;
     width: 100mm;
+    transition: 0.5s ease background-color;
+    align-content: space-around;
 }
 #main .greeting a:visited{
     background-color: violet;
 }
 #main .greeting a:hover{
     background-color: teal;
+}
+#main .greeting a:active{
+    background-color: violet;
 }
 #main .greeting h1{
     font-size: 2.3rem;
@@ -85,6 +107,10 @@ table li{
 }
 #main .greeting h3{
     font-size: 2.3em;
+}
+#main .intro{
+    display: flex;
+    flex-direction: column;
 }
 #main .intro-img{
     height: 450px;
@@ -113,7 +139,57 @@ table li{
     justify-content: center;
     text-align: center;
     font-weight: 400;
+    margin-left: 10px;
+}
+#section .section table{
+    margin: 20px auto;
+    align-items: center;
 }
 #extra .extra.fun{
     color: hotpink;
+}
+#extra .toHide{
+    visibility: hidden;
+}
+#extra .disNone{
+    display: none;
+}
+#extra .extra{
+    
+}
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    padding: 20px auto;
+    border: 5px solid tomato;
+    background-color: rgba(255, 99, 71, 0.74);
+}
+.sticky p{
+    margin: 10px auto;
+}
+#last .last{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 900px)
+{
+    #main .greeting{
+        background-color: teal;
+    }
+    span{
+        color: tomato;
+    }
+    .sticky{
+    border: 5px solid teal;
+    background-color: rgba(0, 128, 128, 0.692);
+    }
+    .fixed{
+    border: 5px solid teal;
+    background-color: rgba(0, 128, 128, 0.692);
+    }
+    #main .intro-img{
+        border-color: teal;
+    }
 }
