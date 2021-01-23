@@ -6,10 +6,35 @@
     <link rel="stylesheet" href="style.css">
     <style>
         /* fill out here */
+        #main .greeting{
+            background-color: tomato;
+        }
+
+        /* @media screen and (max-width: 900px)
+        {
+            #main .greeting{
+                background-color: teal;
+            }
+            span{
+                color: tomato;
+            }
+            .sticky{
+            border: 5px solid teal;
+            background-color: rgba(0, 128, 128, 0.692);
+            }
+            .fixed{
+            border: 5px solid teal;
+            background-color: rgba(0, 128, 128, 0.692);
+            }
+        } */
+        
     </style>
     <title>CSE100Lab3</title>
 </head>
 <body>
+    <div class="sticky">
+        <p>Today's a nice day!!</p>
+    </div>
     <section id="main">
         <div class="main container">
             <div class="greeting">
@@ -80,6 +105,12 @@
         <div class="extra fun">
             <h1>Extra</h1>
             <p>This section is an extra section for random things and fun things </p>
+            <p class="toHide">
+                Hey, you wanna know something, let me tell you a secret
+            </p>
+            <p class="disNone">
+                The secret is ....
+            </p>
         </div>
     </section>
     <section id="last">
@@ -96,5 +127,10 @@
             autofocus autocomplete="section-red shipping address-level2">
         </div>
     </section>
+    <div class="fixed">
+        <p> Scroll to the bottom
+            to find out more about me
+        </p>   
+    </div>
 </body>
 </html>
